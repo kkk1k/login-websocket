@@ -1,0 +1,146 @@
+{% set title = '4ward_chat' %}
+{% set filename = 'index.html' %}
+
+{% extends 'src/layouts/master.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="/assets/scss/iconly.scss">
+{% endblock %}
+
+{% block content %}
+<div class="page-heading">
+    <h3>4ward_chat shopping</h3>
+</div> 
+<div class="page-content"> 
+    <section class="row">
+        <div class="col-12 col-lg-12">
+            <div class="row">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Let's ask!</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-lg">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Comment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="col-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar avatar-md">
+                                                    <img src="assets/static/images/faces/5.jpg">
+                                                </div>
+                                                <p class="font-bold ms-3 mb-0">김한경</p>
+                                            </div>
+                                        </td>
+                                        <td class="col-auto">
+                                            <p class=" mb-0">스트릿 패션은 나의 이상향이야!</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar avatar-md">
+                                                    <img src="assets/static/images/faces/2.jpg">
+                                                </div>
+                                                <p class="font-bold ms-3 mb-0">Chatbot</p>
+                                            </div>
+                                        </td>
+                                        <td class="col-auto">
+                                            <p class=" mb-0">그럼요! 한경님은 절대로 단정한 패션을 원하지 않아요! 스트릿 홍대 느낌나게 해드릴까요?</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar avatar-md">
+                                                    <img src="assets/static/images/faces/5.jpg">
+                                                </div>
+                                                <p class="font-bold ms-3 mb-0">김한경</p>
+                                            </div>  
+                                        </td>
+                                        <td class="col-auto">
+                                            <label>
+                                                <input type="text" class="form-control" id="basicInput" placeholder="Enter What you want"><button class="btn icon btn-primary"><i class="bi bi-pencil"></i></button>
+                                                
+                                            </label>
+                                            
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3">
+            <div class="card">
+                <div class="card-body py-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar avatar-xl">
+                            <img src="assets/static/images/faces/1.jpg" alt="Face 1">
+                        </div>
+                        <div class="ms-3 name">
+                            <h5 class="font-bold">김한경</h5>
+                            <h6 class="text-muted mb-0">@johnducky</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Recent Messages</h4>
+                </div>
+                <div class="card-content pb-4">
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="assets/static/images/faces/4.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h6 class="mb-1">홍대패션</h6>
+                        </div>
+                    </div>
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="assets/static/images/faces/5.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h6 class="mb-1">어쩔 남친룩</h6>
+                        </div>
+                    </div>
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="assets/static/images/faces/1.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h6 class="mb-1">스트릿은 나의 생명</h6>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <button class='btn btn-block btn-xl btn-outline-primary font-bold mt-3'>Start Conversation</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="card-header">
+                    <h4>Visitors Profile</h4>
+                </div>
+                <div class="card-body">
+                    <div id="chart-visitors-profile"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+{% block js %}
+<!-- Need: Apexcharts -->
+<script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
+<script src="assets/static/js/pages/dashboard.js"></script>
+{% endblock %}
