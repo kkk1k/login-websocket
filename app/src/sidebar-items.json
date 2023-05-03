@@ -4,14 +4,20 @@
     "isTitle": true
   },
   {
-    "name": "마이페이지",
+    "name": "Home",
     "url": "index.html",
     "icon": "grid-fill"
   },
   {
+    "name": "마이페이지",
+    "key" : "inbox",
+    "url" : "mypage.html",
+    "icon": "grid-fill"
+  },
+  {
     "name": "최근 메시지",
-    "key": "component",
-    "icon": "stack",
+    "key": "inbox",
+    "icon": "chat-dots-fill",
     "submenu": [
       {
         "name": "Accordion",
@@ -85,34 +91,8 @@
   },
   {
     "name": "팀원 소개",
-    "key": "extra-component",
-    "icon": "collection-fill",
-    "submenu": [
-      {
-        "name": "Avatar",
-        "url": "extra-component-avatar.html",
-        "icon": "avatar-content"
-      },
-      {
-        "name": "Divider",
-        "url": "extra-component-divider.html"
-      },
-      {
-        "name": "Date Picker",
-        "url": "extra-component-date-picker.html"
-      },
-      {
-        "name": "Sweet Alert",
-        "url": "extra-component-sweetalert.html"
-      },
-      {
-        "name": "Toastify",
-        "url": "extra-component-toastify.html"
-      },
-      {
-        "name": "Rating",
-        "url": "extra-component-rating.html"
-      }
-    ]
+    "key": "inbox",
+    "icon": "yin-yang",
+    "url" : "teampage.html"
   }
 ]
