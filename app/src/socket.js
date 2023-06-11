@@ -1,5 +1,5 @@
 // 웹소켓 서버에 연결 // 백엔드 서버 주소 받기
-const socket = new WebSocket("ws://localhost:5173/index.html");
+const socket = new WebSocket("");
 
 // 연결이 성공적으로 수립되었을 때 호출되는 이벤트 핸들러
 socket.onopen = function (event) {
@@ -38,7 +38,7 @@ function displayMessage(message) {
   <td class="col-auto">
     <p class="mb-0">${message}</p>
   </td>`;
-  document.getElementById("chatBox").innerHTML
+  document.getElementById("chatBox").innerHTML;
 }
 
 function displayMessageChatbot(message) {
@@ -56,7 +56,7 @@ function displayMessageChatbot(message) {
   <td class="col-auto">
     <p class="mb-0">${message}</p>
   </td>`;
-  document.getElementById("chatBox").innerHTML
+  document.getElementById("chatBox").innerHTML;
 }
 
 // 메시지 전송 함수
@@ -64,5 +64,5 @@ function sendMessage() {
   const messageInput = document.getElementById("message");
   const message = messageInput.value;
   displayMessage(message); // 메시지 표시 함수 호출
-  soc
+  soc;
 }
