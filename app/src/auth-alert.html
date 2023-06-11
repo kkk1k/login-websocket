@@ -1,0 +1,23 @@
+{% set title = 'Login' %} {% extends 'src/layouts/auth.html' %}
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  {% block content%}
+  <div class="row h-100">
+    <div class="col-lg-6 col-12">
+        <div id="auth-left">
+        <div class="auth-logo">
+          <img src="assets/static/images/logo/logo.svg" alt="Logo" /></a>
+        </div>
+        <h1 class="auth-title">이메일 인증</h1>
+        <p class="auth-subtitle mb-5">
+          이메일로 가서 인증해주세요
+        </p>
+        <form id="myForm">
+        <button type="button" class="btn btn-primary" onclick="location.href = 'auth-login.html'">확인</button>     
+        </div>
+       
+    </div>
+  </div>
+  {% endblock %}
